@@ -18,10 +18,10 @@
 		}
 		if (cookies > 5) {
 			face = ';;)';
-		} else if (cookies < 0) {
-			face = ':\'(';
 		} else if (cookies === 0) {
 			face = ':(';
+		} else if (cookies < 0) {
+			face = ':\'(';
 		} else {
 			face = ':)';
 		}
@@ -36,9 +36,9 @@
 		<h1 id="face">{face}</h1>
 	</div>
 	<div>
-		<button class="but" on:click={() => changable('sum')}>+</button>
-		&nbsp;
 		<button class="but" on:click={() => changable('rest')}>-</button>
+		&nbsp;
+		<button class="but" on:click={() => changable('sum')}>+</button>
 		<button on:click={() => changable('reset')}>RESET</button>
 	</div>
 </section>
